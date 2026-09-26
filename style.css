@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #000000;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    height: 80px;
+}
+
+header .div-header {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+}
+
+header .div-header img {
+    width: 70px;
+}
+
+header .div-header p {
+    color: white;
+    font-size: 33px;
+    margin-top: 7px;
+    font-size: 600;
+}
+
+header ul {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    color: white;
+    height: 60px;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+    font-size: 600;
+}
+
+header ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    display: block;
+    border-radius: 50px;
+    transition: 1s linear;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+header button {
+    color: white;
+    margin-left: 72%;
+    background: transparent;
+    padding: 10px 18px;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#home {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 30px;
+    color: white;
+    display: grid;
+    position: relative;
+}
+
+#home .div-p {
+    font-size: 120px;
+    text-align: right;
+    font-weight: 600;
+    color: transparent;
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px solid gray;
+    position: relative;
+}
+
+#home .div-p span {
+    color: white;
+    display: block;
+    text-align: left;
+    position: relative;
+    top: -140px;
+}
+
+#home .div-p::before {
+    position: absolute;
+    content: attr(anim-text);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: step infinite linear 20s;
+}
+
+@keyframes step {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+#home img {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 800px;
+    height: 700px;
+}
+
+.div-h6 {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.div-h6 h5 {
+    font-size: 50px;
+}
+
+.div-h6 h6 {
+    font-size: 20px;
+}
+
+#animation-1 {
+    width: 90%;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.apppp {
+    width: 640px;
+    height: auto;
+    font-size: 55px;
+    text-align: center;
+    margin: 0 55%;
+    position: relative;
+    color: transparent;
+}
+
+.apppp::after {
+    position: absolute;
+    content: attr(anim-text);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: step infinite linear 20s;
+    border-right: 5px solid white;
+}
+
+.spin {
+    display: flex;
+    overflow: hidden;
+    width: 1500px;
+    margin-left: 870px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    flex-shrink: 0;
+    padding-right: 50px;
+    animation: spin1 linear infinite 20s;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#web3 {
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.text-div {
+    font-size: 40px;
+    width: 1200px;
+}
+
+.hover-div {
+    margin-left: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#web3 {
+    height: 420px;
+    padding: 90px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 1500px;
+}
+
+.text-div {
+    position: relative;
+    z-index: 2;
+}
+
+.text-div p {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+.text-div h6 {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.hover-div {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-left: -10%;
+}
+
+.hover-div::before,
+.hover-div::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #555;
+    border-radius: 50%;
+}
+
+.hover-div::before {
+    left: 10px;
+}
+
+.hover-div::after {
+    right: 10px;
+}
+
+.hover-div p {
+    font-size: 8px;
+    text-align: center;
+    color: #aaa;
+    z-index: 3;
+}
+
+.hover-div span {
+    display: inline-block;
+    margin-left: 250px;
+    color: #fff;
+}
+
+#Projects {
+    padding: 40px 7%;
+}
+
+#Projects>p,
+#other>p,
+#how>p,
+#about>p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.img-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 160px;
+    gap: 3px;
+}
+
+.img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img-div img:nth-child(1) {
+    grid-row: span 2;
+}
+
+
+#other {
+    padding: 40px 7%;
+}
+
+.other-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+.other-div img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.div-mm {
+    width: 100%;
+    padding: 50px 7%;
+    overflow: hidden;
+}
+
+.div-mm img {
+    width: 100%;
+    display: block;
+    opacity: .65;
+}
+
+
+
+#how {
+    padding: 70px 7%;
+    position: relative;
+    overflow: hidden;
+}
+
+#how::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    top: 100px;
+    width: 120px;
+    height: 120px;
+    background: #00ffae;
+    filter: blur(65px);
+    opacity: .5;
+}
+
+#how>p {
+    font-size: 27px;
+    line-height: 1;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.div-cho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.4fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.div-text-4 p {
+    font-size: 9px;
+    color: #aaa;
+    margin-bottom: 14px;
+}
+
+.div-text-4 p:first-child {
+    color: #fff;
+}
+
+.div-ima img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.text-div5 h1 {
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text-div5 h4 {
+    font-size: 8px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #aaa;
+}
+
+
+#about {
+    padding: 50px 7% 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+#about>p {
+    margin-bottom: 25px;
+}
+
+#about h5 {
+    max-width: 480px;
+    font-size: 9px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #aaa;
+}
+
+#about button {
+    margin-top: 25px;
+    padding: 10px 18px;
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    font-size: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#about button:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.img-div img,
+.other-div img {
+    transition: .4s ease;
+}
+
+.img-div img:hover,
+.other-div img:hover {
+    transform: scale(.97);
+    filter: brightness(1.2);
+}
